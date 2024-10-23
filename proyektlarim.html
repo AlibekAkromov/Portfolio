@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyektlarim</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+
+                },
+            },
+            darkMode: "class",
+        };
+    </script>
+</head>
+
+<body class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white">
+    <header data-aos="fade-down">
+        <div class="flex justify-around">
+            <div>
+                <img class="flex dark:hidden" src="./images/img.png" alt="" width="110">
+                <img class="hidden dark:flex" src="./images/img2.png" alt="" width="110">
+            </div>
+            <div class="flex flex-row gap-5 mt-10">
+                <a class="text-xl font-mono" href="/">Bosh Sahifa</a>
+                <a class="text-xl font-mono" href="men_haqimda.html">Men Haqimda</a>
+                <a class="text-xl font-mono" href="proyektlarim.html">Proyektlarim</a>
+                <a class="text-xl font-mono" href="aloqa.html">Aloqa</a>
+            </div>
+            <div>
+                <div class="mt-9">
+                    <button id="theme-toggle" class="p-2">
+                        <svg id="theme-toggle-dark-icon" class="w-6 h-6 hidden" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                        <svg id="theme-toggle-light-icon" class="w-6 h-6 hidden" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div>
+                <p class="text-4xl flex font-mono items-center justify-center mt-52">Proyektlarim</p>
+            </div>
+        </section>
+    </main>
+    <script>
+        AOS.init(); // Ensure AOS is initialized
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggle = document.getElementById('theme-toggle');
+            const darkIcon = document.getElementById('theme-toggle-dark-icon');
+            const lightIcon = document.getElementById('theme-toggle-light-icon');
+            const currentTheme = localStorage.getItem('theme');
+
+            // Установка текущей темы
+            if (currentTheme) {
+                document.documentElement.classList.toggle('dark', currentTheme === 'dark');
+                darkIcon.classList.toggle('hidden', currentTheme !== 'dark');
+                lightIcon.classList.toggle('hidden', currentTheme === 'dark');
+            }
+
+            // Переключение темы
+            themeToggle.addEventListener('click', () => {
+                const isDark = document.documentElement.classList.toggle('dark');
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+                darkIcon.classList.toggle('hidden', !isDark);
+                lightIcon.classList.toggle('hidden', isDark);
+            });
+        });
+    </script>
+</body>
+
+</html>

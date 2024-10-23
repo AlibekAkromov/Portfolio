@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alibek Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+
+                },
+            },
+            darkMode: "class",
+        };
+    </script>
+</head>
+
+<body class="bg-white dark:bg-gray-700 text-gray-900 dark:text-white">
+    <header data-aos="fade-down">
+        <div class="flex justify-around gap-52">
+            <div>
+                <img class="flex dark:hidden" src="./images/img.png" alt="" width="110">
+                <img class="hidden dark:flex" src="./images/img2.png" alt="" width="110">
+            </div>
+            <div class="flex flex-row gap-5 mt-10">
+                <a class="text-xl font-mono" href="/">Bosh Sahifa</a>
+                <a class="text-xl font-mono" href="men_haqimda.html">Men Haqimda</a>
+                <a class="text-xl font-mono" href="proyektlarim.html">Proyektlarim</a>
+                <a class="text-xl font-mono" href="aloqa.html">Aloqa</a>
+            </div>
+            <div>
+                <div class="mt-9">
+                    <button id="theme-toggle" class="p-2">
+                        <svg id="theme-toggle-dark-icon" class="w-6 h-6 hidden" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                        <svg id="theme-toggle-light-icon" class="w-6 h-6 hidden" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="flex justify-around">
+                <div class="flex flex-col gap-8" data-aos="fade-right">
+                    <div class="mt-20 flex flex-col gap-2">
+                        <h1 class="text-4xl font-mono font-semibold">Salom, Man Alibek Akramovman.</h1>
+                        <p class="text-2xl font-mono">Men Dasturchiman</p>
+                    </div>
+                    <div class="flex gap-10">
+                        <button class="glow-on-hover" type="button"><a href="./aloqa.html">Aloqa</a></button>
+                        <button class="glow-on-hover" type="button"><a href="">Men Haqimda</a></button>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <img class="rounded-lg" src="./images/971.jpg" alt="" width="550">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="flex items-center mt-32 ml-28 gap-6">
+                <div>
+                    <p class="text-3xl font-mono font-semibold">Biladigan tilarim:</p>
+                </div>
+                <div class="flex gap-16">
+                    <div class="flex gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none"
+                            viewBox="0 0 256 256">
+                            <rect width="256" height="256" fill="#E14E1D" rx="60" />
+                            <path fill="#fff"
+                                d="M48 38L56.6098 134.593H167.32L163.605 176.023L127.959 185.661L92.38 176.037L90.0012 149.435H57.9389L62.5236 200.716L127.951 218.888L193.461 200.716L202.244 102.655H85.8241L82.901 69.9448H205.041H205.139L208 38H48Z" />
+                            <path fill="#EBEBEB"
+                                d="M128 38H48L56.6098 134.593H128V102.655H85.8241L82.901 69.9448H128V38Z" />
+                            <path fill="#EBEBEB"
+                                d="M128 185.647L127.959 185.661L92.38 176.037L90.0012 149.435H57.9388L62.5236 200.716L127.951 218.888L128 218.874V185.647Z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none"
+                            viewBox="0 0 256 256">
+                            <rect width="256" height="256" fill="#242938" rx="60" />
+                            <path fill="url(#paint0_linear_2_119)" fill-rule="evenodd"
+                                d="M83 110C88.9991 86.0009 104.001 74 128 74C164 74 168.5 101 186.5 105.5C198.501 108.501 209 104.001 218 92C212.001 115.999 196.999 128 173 128C137 128 132.5 101 114.5 96.5C102.499 93.4991 92 97.9991 83 110ZM38 164C43.9991 140.001 59.0009 128 83 128C119 128 123.5 155 141.5 159.5C153.501 162.501 164 158.001 173 146C167.001 169.999 151.999 182 128 182C92 182 87.5 155 69.5 150.5C57.4991 147.499 47 151.999 38 164Z"
+                                clip-rule="evenodd" />
+                            <defs>
+                                <linearGradient id="paint0_linear_2_119" x1="86.5" x2="163.5" y1="74" y2="185.5"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#32B1C1" />
+                                    <stop offset="1" stop-color="#14C6B7" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="flex gap-3">
+                        <g xmlns="http://www.w3.org/2000/svg" transform="translate(0, 0)"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 256 256"
+                                fill="none">
+                                <rect width="256" height="256" rx="60" fill="#F0DB4F" />
+                                <path
+                                    d="M67.3117 213.932L86.9027 202.076C90.6821 208.777 94.1202 214.447 102.367 214.447C110.272 214.447 115.256 211.355 115.256 199.327V117.529H139.314V199.667C139.314 224.584 124.708 235.926 103.398 235.926C84.1533 235.926 72.9819 225.959 67.3113 213.93"
+                                    fill="#323330" />
+                                <path
+                                    d="M152.381 211.354L171.969 200.013C177.126 208.434 183.828 214.62 195.684 214.62C205.653 214.62 212.009 209.636 212.009 202.762C212.009 194.514 205.479 191.592 194.481 186.782L188.468 184.203C171.111 176.815 159.597 167.535 159.597 147.945C159.597 129.901 173.345 116.153 194.826 116.153C210.12 116.153 221.118 121.481 229.022 135.4L210.291 147.429C206.166 140.04 201.7 137.119 194.826 137.119C187.78 137.119 183.312 141.587 183.312 147.429C183.312 154.646 187.78 157.568 198.09 162.037L204.104 164.614C224.553 173.379 236.067 182.313 236.067 202.418C236.067 224.072 219.055 235.928 196.2 235.928C173.861 235.928 159.426 225.274 152.381 211.354"
+                                    fill="#323330" />
+                            </svg></g>
+                        <img class="rounded-xl"
+                            src="https://cdn2.iconfinder.com/data/icons/social-flat-buttons-3/512/github-512.png" alt=""
+                            width="56">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        AOS.init(); // Ensure AOS is initialized
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggle = document.getElementById('theme-toggle');
+            const darkIcon = document.getElementById('theme-toggle-dark-icon');
+            const lightIcon = document.getElementById('theme-toggle-light-icon');
+            const currentTheme = localStorage.getItem('theme');
+
+            // Установка текущей темы
+            if (currentTheme) {
+                document.documentElement.classList.toggle('dark', currentTheme === 'dark');
+                darkIcon.classList.toggle('hidden', currentTheme !== 'dark');
+                lightIcon.classList.toggle('hidden', currentTheme === 'dark');
+            }
+
+            // Переключение темы
+            themeToggle.addEventListener('click', () => {
+                const isDark = document.documentElement.classList.toggle('dark');
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+                darkIcon.classList.toggle('hidden', !isDark);
+                lightIcon.classList.toggle('hidden', isDark);
+            });
+        });
+    </script>
+</body>
+
+</html>
